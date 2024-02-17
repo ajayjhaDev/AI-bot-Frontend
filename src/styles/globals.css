@@ -105,3 +105,35 @@ a {
     color-scheme: dark;
   }
 }
+
+.search-bar {
+  width: 80% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding-left: 20% !important;
+  position: relative !important;
+  bottom: 120px !important;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: 100% !important;
+}
+
+.search-bar button {
+  background-color: #3f7fc3;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.search-bar-button:hover {
+  background-color: #3e7bcc !important;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer !important;
+}
