@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
@@ -7,6 +7,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter/dist/cjs";
 
 import { darcula } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import HashLoader from "react-spinners/HashLoader";
+import { useTheme } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,11 @@ export default function Home() {
   const [data, setData] = useState("");
   const [inputVal, setInputVal] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setTheme("dark");
+  }, []);
 
   const handleChange = (e) => {
     console.log(e.target.value);
@@ -57,7 +63,7 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
           <p></p>
-          <div>
+          <div style={{ color: "white" }}>
             <a>AI bot By Ajay Jha</a>
           </div>
         </div>

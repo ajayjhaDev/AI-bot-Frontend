@@ -18,8 +18,7 @@
     transparent 360deg
   );
   --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
+    /* rgba(255, 255, 255, 1), */ rgba(255, 255, 255, 0)
   );
 
   --tile-start-rgb: 239, 245, 249;
@@ -87,12 +86,6 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 a {
