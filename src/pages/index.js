@@ -70,7 +70,7 @@ export default function Home() {
 
         <div className={styles.center}>
           {isLoading ? (
-            <div style={{ position: "relative", bottom: "580px" }}>
+            <div style={{ position: "relative", bottom: "50px" }}>
               <HashLoader color={"#36d7b7"} />
             </div>
           ) : (
