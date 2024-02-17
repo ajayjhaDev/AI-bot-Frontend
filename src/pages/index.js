@@ -23,7 +23,7 @@ export default function Home() {
   const handleApi = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("http://localhost:5000/generate", {
+      const response = await fetch("https://ai-bot-flax.vercel.app/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
