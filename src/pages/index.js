@@ -74,9 +74,11 @@ export default function Home() {
               <HashLoader color={"#36d7b7"} />
             </div>
           ) : (
-            <SyntaxHighlighter language="javascript" style={darcula}>
-              {data}
-            </SyntaxHighlighter>
+            <div style={{ width: "40%" }}>
+              <SyntaxHighlighter language="javascript" style={darcula}>
+                {data}
+              </SyntaxHighlighter>
+            </div>
           )}
         </div>
       </main>
