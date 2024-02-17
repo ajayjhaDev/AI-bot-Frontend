@@ -68,13 +68,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.center}>
+        <div className={styles.center} style={{ width: "100%" }}>
           {isLoading ? (
             <div style={{ position: "relative", bottom: "50px" }}>
               <HashLoader color={"#36d7b7"} />
             </div>
           ) : (
-            <div style={{ width: "80%" }}>
+            <div style={{ width: "100%" }}>
               <SyntaxHighlighter language="javascript" style={darcula}>
                 {data}
               </SyntaxHighlighter>
